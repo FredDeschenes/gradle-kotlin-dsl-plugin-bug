@@ -3,6 +3,8 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     id("nebula.kotlin") version "1.2.41" apply false
+    // I can't not set this otherwise I get errors for every Java/Application related plugin stuff in the
+    // 'subproject' block below
     application
 }
 
